@@ -1,0 +1,30 @@
+.mon-btn {
+	text-decoration: none;
+	color: black;
+	font-size: 1.4em;
+	position: relative;
+	padding: 0 15px;
+	transition: .2s all;
+	font-weight: 300;
+}
+	
+.mon-btn::before {
+	content: '';
+	position: absolute;
+	background: white;
+	width: 0.1px;
+	height: 100%;
+	left: 10;
+	transition: 1s all;
+	z-index: -1;
+}
+	
+.mon-btn:hover::before {
+	width: 100%;
+	background: #4cd3c2;
+}
+	
+.mon-btn:hover {
+	color: #ffffff;
+	font-size: 1.6em;
+}
